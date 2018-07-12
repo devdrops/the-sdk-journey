@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    php:
+        image: devdrops/php-toolbox
+        volumes:
+            - .:/php-sdk
+        working_dir: /php-sdk
+        env_file: .env
+
